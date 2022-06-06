@@ -41,7 +41,6 @@ function math(opp:string,a:number, b:number){
 console.log(math("div", 4, 5));
 
 const arr1:number[] = [1,2,3,4,5,6];
-
 let temp = "";
 for (let i = 0; i < arr1.length; i++) {
   temp += arr1[i] + " ";
@@ -52,7 +51,15 @@ for (let i = 0; i < arr1.length; i++) {
 //   }
 console.log(temp);
 
+//Write a typescript program to print numbers from 1 to 10 using for loop
+for (let i = 0; i <= 10; i++) {
+    console.log(i);
+  }
 
+  //Write a typescript program to print numbers from 10 to 1 using for loop
+  for (let i = 10; i >= 0; i--) {
+    console.log(i);
+  }
 
 
 

@@ -52,59 +52,61 @@ for (let i = 0; i < arr1.length; i++) {
 console.log(temp);
 
 //E1 Write a typescript program to print numbers from 1 to 10 using for loop
-for (let i = 1; i <= 10; i++) {
+for (let i:number = 1; i <= 10; i++) {
     console.log(i);
   }
 
 //E2 Write a typescript program to print numbers from 10 to 1 using for loop
-  for (let i = 10; i >= 1; i--) {
+  for (let i:number = 10; i >= 1; i--) {
     console.log(i);
   }
 
 // E3 Write a typescript program to print Even numbers in given array[13,23,12,45,22,48,66,100]
-  const arr= [13,23,12,45,22,48,66,100];
+  const arr:number[]= [13,23,12,45,22,48,66,100];
 
-  for (let i = 0; i < arr.length; i++) {
+  for (let i:number = 0; i < arr.length; i++) {
     if (arr[i] % 2 == 0 ){
         console.log(arr[i]);
     }   
   }
 
 // E4 Write a program to delete all occurrence of element in given array [23,56,4,78,5,63,45,210,56];
-const delArr = [23,56,4,78,5,63,45,210,56];
+const delArr:number[] = [23,56,4,78,5,63,45,210,56];
 
-for( let i = 0; i < delArr.length; i++){ 
+for( let i:number = 0; i < delArr.length; i++){ 
     delArr.splice(0, delArr.length);
     console.log(delArr);
 }
 
 // E5 Write a JS program to print a pattern using for loop
 
-let str = "";
-for (let i = 1; i <= 8; i++) {
-    for (let j = 1; j <= i; j++) {        
+let str:string = "";
+for (let i:number = 1; i <= 8; i++) {
+    for (let j:number = 1; j <= i; j++) {        
         str += "*";
       }
     str += "\n";
 }
 console.log(str)
 
-let str1 = "";
-for (let i = 1; i <= 8; i++) {
-    for (let j = 1; j <= i; j++) {        
+let str1:string = "";
+for (let i:number = 1; i <= 8; i++) {
+    for (let j:number = 1; j <= i; j++) {        
         str1 += j ;
       }
     str1 += "\n";
 }
 console.log(str1)
 
+
+
 //E 6 Write a typescript program to find the largest number in an array [2, 45, 3, 67, 34, 567, 34, 345, 123]
 
-let largeNumber = [2, 45, 3, 67, 34, 567, 34, 345, 123];
-let max = 0; 
+let largeNumber:number[] = [2, 45, 3, 67, 34, 567, 34, 345, 123];
+let max:number = 0; 
 
 
-for (let i = 1; i <= largeNumber.length; i++) {
+for (let i:number = 1; i <= largeNumber.length; i++) {
   if (largeNumber[i] > max){
     max=largeNumber[i];
     }  
@@ -120,3 +122,30 @@ while (i <= 10) {
     console.log(i);
     i++;
 }
+
+let str2:string = "";
+for (let i:number = 1; i <= 8; i++) {
+    for (let j:number = 0; j < 8 - i; j++) {
+      str2 += " ";
+    }
+    // for (let k:number = 0; k < i; k++) {  
+    //   str2 += "*";         
+    // }
+    for (let k:number = 0; k < i; k++) {
+      str2 += "*";
+    }
+    str1 += "\n";
+}
+console.log(str2);
+
+let str4:string = "";
+for (let i:number = 1; i <= 8; i++) {
+  for (let j:number = 0; j < 8 - i; j++) {
+    str4 += " ";
+  }
+  for (let k:number = 0; k < i; k++) {
+    str4 += "*";
+  }
+  str4 += "\n";
+}
+console.log(str4);

@@ -96,3 +96,14 @@ for (let i = 1; i <= 8; i++) {
     str1 += "\n";
 }
 console.log(str2);
+let str4 = "";
+for (let i = 1; i <= 8; i++) {
+    for (let j = 0; j < 8 - i; j++) {
+        str4 += " ";
+    }
+    for (let k = 0; k < i; k++) {
+        str4 += "*";
+    }
+    str4 += "\n";
+}
+console.log(str4);
